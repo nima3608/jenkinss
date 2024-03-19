@@ -21,13 +21,14 @@ pipeline {
         stage('Push Artifact') {
             steps {
                 script {
-                    sh 
+                    sh '''
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    echo "Hi" >> file5
-                    git add ./artifact/file5.txt
+                    echo "Hi" >> ./artifact/file50
+                    git add ./artifact/file50
                     git commit -m "Add artifact"
-                    git push origin main
+                    git push
+                    ''' 
                     
                 }
             }
