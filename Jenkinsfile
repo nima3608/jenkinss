@@ -29,7 +29,7 @@ pipeline {
                     //git commit -m "Add artifact"
                     //git push origim main
                     //''' 
-                    git url: 'https://github.com/nima3608/jenkinss.git', branch: 'main'
+                    git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
                     //sh 'git clone https://github.com/nima3608/jenkinss.git'
                 }
             }
