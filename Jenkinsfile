@@ -21,15 +21,15 @@ pipeline {
         stage('Push Artifact') {
             steps {
                 script {
-                    //sh '''
+                    sh '''
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
                     //echo "Hi" >> artifact/file50
                     //git add artifact/file50
                     //git commit -m "Add artifact"
                     //git push origim main
-                    //'''
                     sh 'git clone https://github.com/nima3608/jenkinss.git'
+                    '''
                     //THIS COMMAND RUN UND CLONE GIT IN C:\programdata\jenkins\.jenkins\workspace\Jenkinsfil_github_simple 
                     //git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
                     
