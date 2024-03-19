@@ -24,7 +24,7 @@ pipeline {
                     sh 
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    git add c:\nima\jenkins\file.txt // Replace with your actual file path
+                    git add .\nima\jenkins\file.txt // Replace with your actual file path
                     git commit -m "Add artifact"
                     git push origin main
                     
