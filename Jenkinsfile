@@ -24,8 +24,8 @@ pipeline {
                    
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    echo "Hi" >> file500
-                    git add file500
+                    echo "Hi" >> file5000
+                    git add file5000
                     git commit -m "Add artifact"
                     git push origin main
                     //sh 'git clone https://github.com/nima3608/jenkinss.git'
