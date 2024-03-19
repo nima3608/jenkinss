@@ -24,10 +24,10 @@ pipeline {
                     sh '''
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    echo "Hi" >> ./artifact/file50
-                    git add ./artifact/file50
+                    echo "Hi" >> artifact/file50
+                    git add artifact/file50
                     git commit -m "Add artifact"
-                    git push
+                    git push origim main
                     ''' 
                     
                 }
