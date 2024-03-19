@@ -28,9 +28,11 @@ pipeline {
                     //git add artifact/file50
                     //git commit -m "Add artifact"
                     //git push origim main
-                    //''' 
-                    git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
-                    //sh 'git clone https://github.com/nima3608/jenkinss.git'
+                    //'''
+                    sh 'git clone https://github.com/nima3608/jenkinss.git'
+                    //THIS COMMAND RUN UND CLONE GIT IN C:\programdata\jenkins\.jenkins\workspace\Jenkinsfil_github_simple 
+                    //git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
+                    
                 }
             }
         }
