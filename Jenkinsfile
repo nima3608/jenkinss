@@ -27,7 +27,7 @@ pipeline {
                     echo "Hi" >> file50
                     git add file50
                     git commit -m "Add artifact"
-                    git push origim main
+                    git push origin main
                     //sh 'git clone https://github.com/nima3608/jenkinss.git'
                    
                     //THIS COMMAND RUN UND CLONE GIT IN C:\programdata\jenkins\.jenkins\workspace\Jenkinsfil_github_simple 
