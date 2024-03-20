@@ -1,5 +1,15 @@
 pipeline {
     agent any
+    triggers {
+        GenericTrigger(
+            ...
+            genericVariables: [
+                [key: 'main', expression: '$.ref', expressionType: './jason']
+            ],
+           // token: 'mySecureToken',
+            ...
+        )
+    }
 
     stages {
         stage('Hello') {
@@ -30,7 +40,7 @@ pipeline {
                     bat 'echo "Hallo Welt"'
                     //this command is not run 
                     sh 'echo "Hallo Welt"'
-                    
+
                      //git add file5000
                     // git commit -m "Add artifact"
                     //git push origin main
