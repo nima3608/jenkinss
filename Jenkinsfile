@@ -24,11 +24,11 @@ pipeline {
                    
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    echo "Hi" >> file5000
-                    git add file5000
-                    git commit -m "Add artifact"
-                    git push origin main
-                    //sh 'git clone https://github.com/nima3608/jenkinss.git'
+                    echo "Hi" >> file6  
+                     //git add file5000
+                    // git commit -m "Add artifact"
+                    //git push origin main
+                    sh 'git clone https://github.com/nima3608/jenkinss.git'
                    
                     //THIS COMMAND RUN UND CLONE GIT IN C:\programdata\jenkins\.jenkins\workspace\Jenkinsfil_github_simple 
                     //git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
