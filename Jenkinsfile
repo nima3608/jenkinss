@@ -14,7 +14,7 @@ pipeline {
         }
         stage('OK') {
             steps {
-                sleep(time: 5, unit: 'SECONDS') // Added parameters for clarity
+                sleep(time: 1, unit: 'SECONDS') // Added parameters for clarity
                 echo 'I\'m ok'
             }
         }
@@ -28,7 +28,7 @@ pipeline {
                      //git add file5000
                     // git commit -m "Add artifact"
                     //git push origin main
-                    sh 'git clone https://github.com/nima3608/jenkinss.git'
+                    //sh 'git clone https://github.com/nima3608/jenkinss.git'
                    
                     //THIS COMMAND RUN UND CLONE GIT IN C:\programdata\jenkins\.jenkins\workspace\Jenkinsfil_github_simple 
                     //git url: 'https://github.com/nima3608/building-a-multibranch-pipeline-project.git', branch: 'main'
