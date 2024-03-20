@@ -24,7 +24,8 @@ pipeline {
                    
                     //git config user.email "your_email@example.com"
                     //git config user.name "Your Name"
-                    sh 'echo "Hi" >> file6'  
+                    //sh 'echo "Hi" >> file6'
+                    bat 'Hi'  
                      //git add file5000
                     // git commit -m "Add artifact"
                     //git push origin main
