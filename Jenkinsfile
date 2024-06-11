@@ -17,7 +17,7 @@ pipeline {
                     env.MAVEN_HOME = tool name: 'Maven 3.9.6', type: 'maven'
                 }
                 // Führen Sie den Maven-Befehl aus
-                sh 'mvn clean package -Dsoftware.version=2.1.1.1-bio'
+                bat 'mvn clean package -Dsoftware.version=2.1.1.1-bio'
             }
         }
     }
