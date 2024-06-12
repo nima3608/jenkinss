@@ -8,10 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Führen Sie den Maven-Befehl aus
-                bat 'mvn clean package'
+                // Wechseln Sie in das Verzeichnis, das die pom.xml-Datei enthält
+                dir('path/to/your/project') {
+                    // Führen Sie den Maven-Befehl aus
+                    bat 'mvn clean package'
+                }
             }
         }
     }
 }
-
