@@ -13,7 +13,7 @@ pipeline {
                     env.MAVEN_HOME = tool name: 'Maven 3.9.6', type: 'maven'
                 }
                 // Führen Sie den Maven-Befehl aus
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
