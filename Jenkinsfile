@@ -1,15 +1,35 @@
 pipeline {
     agent any
+
+    triggers {
+        cron('H/2 * * * *')
+    }
+
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                sh 'javac HelloWorld.java'
+                // Checkout code from the repository
+                git branch: 'main', url: 'https://nima3608/jenkinss.git'
             }
         }
-        stage('Run') {
+        stage('Build') {
             steps {
-                sh 'java HelloWorld'
+                echo 'Building...'
+                // Add your build steps here
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add your test steps here
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Add your deployment steps here
             }
         }
     }
 }
+
