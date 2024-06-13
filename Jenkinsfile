@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from the repository
-                git branch: 'main', url: 'https://nima3608/jenkinss.git'
+                git branch: 'main', url: 'https://github.com/nima3608/jenkinss.git'  
             }
         }
         stage('Build') {
